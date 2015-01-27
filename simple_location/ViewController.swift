@@ -11,8 +11,10 @@ import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
-    @IBOutlet weak var lblLatitude: UILabel!
+    @IBOutlet weak var lblLatitude:  UILabel!
     @IBOutlet weak var lblLongitude: UILabel!
+    @IBOutlet weak var lblCity:      UILabel!
+    
     let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
@@ -30,19 +32,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func btnWhereAmI(sender: UIButton) {
-        var latitudeString = NSString(format: "Latitude: %0.4f", self.locationManager.location.coordinate.latitude)
-        lblLatitude.text   = latitudeString
-        
-        var longitudeString = NSString(format: "Longitude: %0.4f", self.locationManager.location.coordinate.longitude)
-        lblLongitude.text   = longitudeString
-    }
-    
-    @IBAction func btnClear(sender: UIButton) {
-        lblLatitude.text  = "Latitude"
-        lblLongitude.text = "Longitude"
-    }
-    
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         var dCurrentLatitude  : Double = locations[0].coordinate.latitude
         var dCurrentLongitude : Double = locations[0].coordinate.longitude
@@ -52,11 +41,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         var longitudeString = NSString(format: "Longitude: %0.4f", dCurrentLongitude)
         lblLongitude.text   = longitudeString
+        
+        CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: { (placemarks, error) -> Void in
+            if error != nil {
+                self.lblCity.text = "Error retrieving city."
+            }
+            
+            if placemarks.count > 0 {
+                let placemark = placemarks[0] as CLPlacemark
+                self.displayCity(placemark)
+            } else {
+                self.lblCity.text = "Error with data."
+            }
+        })
     }
     
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
         lblLatitude.text = "Can't get your location!"
     }
-
+    
+    func displayCity(placemark: CLPlacemark) {
+        lblCity.text = "\(placemark.locality), \(placemark.administrativeArea)"
+    }
 }
 

@@ -25,58 +25,51 @@
                                     <rect key="frame" x="16" y="20" width="343" height="61"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWv-Ce-dDZ">
-                                <rect key="frame" x="16" y="89" width="368" height="61"/>
-                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="89" width="343" height="61"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApQ-g6-PzJ">
                                 <rect key="frame" x="16" y="158" width="368" height="61"/>
-                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.64629781246185303" green="0.86889636516571045" blue="0.99928206205368042" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="158" width="343" height="61"/>
+                                    <rect key="frame" x="16" y="269" width="343" height="61"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJn-17-fpf">
-                                <rect key="frame" x="16" y="292" width="368" height="192"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="Where Am I?">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="292" width="343" height="192"/>
-                                </variation>
-                                <connections>
-                                    <action selector="btnWhereAmI:" destination="vXZ-lx-hvc" eventType="touchDown" id="Bv2-BJ-xSC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UE4-A6-lc9">
-                                <rect key="frame" x="16" y="492" width="368" height="100"/>
-                                <color key="backgroundColor" white="0.97999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWv-Ce-dDZ">
+                                <rect key="frame" x="16" y="89" width="368" height="61"/>
+                                <color key="backgroundColor" red="0.64277082681655884" green="0.87009495496749878" blue="0.99880212545394897" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Clear">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <color key="textColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="492" width="343" height="100"/>
+                                    <rect key="frame" x="16" y="200" width="343" height="61"/>
                                 </variation>
-                                <connections>
-                                    <action selector="btnClear:" destination="vXZ-lx-hvc" eventType="touchDown" id="WbQ-qq-4hw"/>
-                                </connections>
-                            </button>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnL-p7-ELz">
+                                <rect key="frame" x="16" y="158" width="368" height="61"/>
+                                <color key="backgroundColor" red="0.64629781249999996" green="0.86889636520000002" blue="0.99928206210000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="519" width="343" height="61"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.85803091526031494" green="0.95136553049087524" blue="0.99968785047531128" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="vnL-p7-ELz"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="vnL-p7-ELz"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="lblCity" destination="vnL-p7-ELz" id="p7L-FT-MIc"/>
                         <outlet property="lblLatitude" destination="GWv-Ce-dDZ" id="1tV-EO-dFB"/>
                         <outlet property="lblLongitude" destination="ApQ-g6-PzJ" id="YQa-QU-0gf"/>
                     </connections>
