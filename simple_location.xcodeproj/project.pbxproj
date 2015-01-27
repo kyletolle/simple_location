@@ -14,6 +14,7 @@
 		270C8D6D1A77668200FC8EBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270C8D6C1A77668200FC8EBF /* Images.xcassets */; };
 		270C8D701A77668200FC8EBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270C8D6E1A77668200FC8EBF /* LaunchScreen.xib */; };
 		270C8D7C1A77668200FC8EBF /* simple_locationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270C8D7B1A77668200FC8EBF /* simple_locationTests.swift */; };
+		270C8D861A77730900FC8EBF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270C8D851A77730900FC8EBF /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		270C8D751A77668200FC8EBF /* simple_locationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simple_locationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		270C8D7A1A77668200FC8EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		270C8D7B1A77668200FC8EBF /* simple_locationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simple_locationTests.swift; sourceTree = "<group>"; };
+		270C8D851A77730900FC8EBF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270C8D861A77730900FC8EBF /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		270C8D541A77668200FC8EBF = {
 			isa = PBXGroup;
 			children = (
+				270C8D851A77730900FC8EBF /* CoreLocation.framework */,
 				270C8D5F1A77668200FC8EBF /* simple_location */,
 				270C8D781A77668200FC8EBF /* simple_locationTests */,
 				270C8D5E1A77668200FC8EBF /* Products */,
