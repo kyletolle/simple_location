@@ -42,6 +42,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         var longitudeString = NSString(format: "Longitude: %0.4f", dCurrentLongitude)
         lblLongitude.text   = longitudeString
         
+        // Followed this tutorial for the next piece:
+        // http://www.veasoftware.com/tutorials/2014/10/18/xcode-6-tutorial-ios-8-current-location-in-swift
         CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: { (placemarks, error) -> Void in
             if error != nil {
                 self.lblCity.text = "Error retrieving city."
